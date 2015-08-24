@@ -91,7 +91,7 @@ Template.userNav.events({
 					localStorage.removeItem('room');
 
 					// Redirects browser to correct room URL (if a user was in a private room)
-					window.location.replace('http://slipstream.thruhere.net:3000/');
+					window.location.replace('http://draw-squared.meteor.com/');
 				});
 			});
 		});
@@ -209,7 +209,7 @@ Template.userNav.events({
 			localStorage.removeItem('room');
 
 			// Redirects browser to correct room URL (if a user was in a private room)
-			window.location.replace('http://slipstream.thruhere.net:3000/');
+			window.location.replace('http://draw-squared.meteor.com/');
 		});
 	},
 

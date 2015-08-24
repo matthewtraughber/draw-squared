@@ -315,7 +315,7 @@ Meteor.methods({
 					localStorage.setItem('room', roomID);
 
 					// Redirects user to new room page
-					window.location.replace('http://slipstream.thruhere.net:3000/rooms/' + roomID + '/');
+					window.location.replace('http://draw-squared.meteor.com/rooms/' + roomID + '/');
 				});
 			}
 		}

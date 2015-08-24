@@ -22,7 +22,7 @@ Meteor.Router.filters({
 		// Navigates to the private room if necessary
 		if (roomID !== 'lobby' && roomID !== undefined && roomID !== null && roomID !== '') {
 			// Redirects browser to correct room URL
-			window.location.replace('http://slipstream.thruhere.net:3000/rooms/' + roomID + '/');
+			window.location.replace('http://draw-squared.meteor.com/rooms/' + roomID + '/');
 
 		// Directs user not in a private room to the lobby
 		} else {
@@ -42,7 +42,7 @@ Meteor.Router.filters({
 		// Directs unvalidated user to the lobby
 		} else {
 			// Redirects browser to correct room URL
-			window.location.replace('http://slipstream.thruhere.net:3000/');
+			window.location.replace('http://draw-squared.meteor.com/');
 		}
 	}
 });
