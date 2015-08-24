@@ -1,0 +1,11 @@
+////////////////////////////////////////////////////////////////////////////////////
+// Manages landing functionality
+////////////////////////////////////////////////////////////////////////////////////
+Template.landing.events({
+	// Detects when someone clicks the get started button
+	"click #showRegistrationModal" : function(event) {
+		// Prepares the register modal
+		Meteor.call("prepareRegisterModal");
+	}
+
+});

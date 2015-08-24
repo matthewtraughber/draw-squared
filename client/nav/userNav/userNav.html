@@ -1,0 +1,34 @@
+<!-- User navigation template -->
+<template name="userNav">
+	
+	<!-- Detects if user is logged in -->
+	{{#if currentUser}}
+		<!-- User specific navigation -->
+		<ul class="nav pull-right">
+			<li id="userDropdownNav" class="dropdown">
+				<!-- Displays active user name -->
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">{{activeUser}} <b class="caret"></b></a>
+				<ul  class="dropdown-menu pull-right" role="menu">
+					<!-- Logs out active user -->
+					<li><a href="#" id="userLogout">Log out</a></li>
+					<li class="divider"></li>
+					<li class="nav-header">Room Navigation</li>
+					<li id="createPrivateRoom"><a href="#">Create room</a></li>
+				</ul>
+			</li>
+		</ul>
+	<!-- User isn't logged in -->
+	{{else}}
+		<ul class="nav pull-right">
+			<!-- Show link to log in-->
+			<li id="showLoginModal">
+				<a href="#" class="navbar-link">log in</a>
+			</li>
+			<!-- Show link to register -->
+			<li id="showRegistrationModal">
+				<a href="#" class="navbar-link">register</a>
+			</li>
+		</ul>
+	{{/if}}
+
+</template>

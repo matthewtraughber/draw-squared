@@ -1,0 +1,41 @@
+<!-- Login template -->
+<template name="login">
+	
+	<!-- Login modal -->
+	<div id="loginModal" class="modal hide fade" tabindex="-1" role="dialog">
+		<form action="action">
+			<!-- Login modal header -->
+			<div class="modal-header">
+				<h4>Oh, hello again!</h4>
+			</div>
+
+			<!-- Login modal body -->
+			<div class="modal-body">
+
+				<div class="controls">
+					<div class="input-prepend">
+						<span class="add-on"><i class="icon-user"></i></span>
+						<input type="text" id="accountEmailOrUsername" class="input-block-level" placeholder="Email or username" autofocus="autofocus" />
+					</div>
+				</div>
+
+				<div class="controls">
+					<div class="input-prepend">
+						<span class="add-on"><i class="icon-lock"></i></span>
+						<input type="password" id="accountPassword" class="input-block-level" placeholder="Password" />
+					</div>
+				</div>
+						
+			</div>
+
+			<!-- Login modal footer -->
+			<div class="modal-footer">
+				<!-- Login feedback template -->
+				{{>loginFeedback}}
+
+				<input type="submit" id="userLogin" class="btn btn-success" value="Sign in" />
+			</div>
+		</form>
+	</div>
+
+</template>

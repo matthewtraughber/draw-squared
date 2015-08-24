@@ -1,0 +1,28 @@
+<!-- Invite confirmation template -->
+<template name="inviteConfirmation">
+	
+	<!-- Invite confirmation modal -->
+	<div id="inviteConfirmationModal" class="modal hide fade" tabindex="-1" role="dialog">
+		<form action="action">
+			<!-- Invite confirmation modal header -->
+			<div class="modal-header">
+				<h4>Are you sure you sure?</h4>
+			</div>
+
+			<!-- Invite confirmation modal body -->
+			<div class="modal-body">
+				<p>Invite <strong>{{>invitee}}</strong> to a private room.</p>
+			</div>
+
+			<!-- Invite confirmation modal footer -->
+			<div class="modal-footer">
+				<!-- Invite confirmation feedback template -->
+				{{>inviteFeedback}}
+
+				<input type="submit" id="cancelInvite" class="btn btn-danger" value="Nevermind" />
+				<input type="submit" id="inviteUser" class="btn btn-success" value="Invite" />
+			</div>
+		</form>
+	</div>
+
+</template>

@@ -1,0 +1,8 @@
+<!-- Room chat box message template -->
+<template name="roomChatBoxMessage">	
+	
+	{{#each roomMessage}}
+		<pre><span class="sidebarUserName"><strong>{{userName}}:&nbsp;</strong></span><span class="sidebarMessage">{{messageContents}}</span></pre>
+	{{/each}}
+
+</template>

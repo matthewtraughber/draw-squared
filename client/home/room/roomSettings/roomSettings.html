@@ -1,0 +1,152 @@
+<!-- Room settings template -->
+<template name="roomSettings">
+	
+	<!-- Room settings modal -->
+	<div id="roomSettingsModal" class="modal hide fade" tabindex="-1" role="dialog">
+		<form action="action">
+			<!-- Room settings modal header -->
+			<div class="modal-header">
+				<h4>Room settings</h4>
+			</div>
+
+			<!-- Room settings modal body -->
+			<div class="modal-body">
+
+				<div class="controls">
+					<div class="input-prepend">
+						<span class="add-on">Interpolation</span>
+						<select id="interpolation" class="span4">
+							<option value="Linear">Linear</option>
+							<option value="Step-before">Step-before</option>
+							<option value="Step-after">Step-after</option>
+							<option value="Basis">Basis</option>
+							<option value="Basis-open">Basis-open</option>
+							<option value="Basis-closed">Basis-closed</option>
+							<option value="Bundle">Bundle</option>
+							<option value="Cardinal">Cardinal</option>
+							<option value="Cardinal-open">Cardinal-open</option>
+							<option value="Cardinal-closed">Cardinal-closed</option>
+							<option value="Monotone">Monotone</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="controls">
+					<div class="input-prepend">
+						<span class="add-on">Stroke color</span>
+						<select id="strokeColor" class="span4">
+							<option value="White">White</option>
+							<option value="Silver">Silver</option>
+							<option value="Gray">Gray</option>
+							<option value="Black">Black</option>
+							<option value="Red">Red</option>
+							<option value="Maroon">Maroon</option>
+							<option value="Yellow">Yellow</option>
+							<option value="Olive">Olive</option>
+							<option value="Lime">Lime</option>
+							<option value="Green">Green</option>
+							<option value="Aqua">Aqua</option>
+							<option value="Teal">Teal</option>
+							<option value="Blue">Blue</option>
+							<option value="Navy">Navy</option>
+							<option value="Fuchsia">Fuchsia</option>
+							<option value="Purple">Purple</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="controls">
+					<div class="input-prepend">
+						<span class="add-on">Fill color</span>
+						<select id="fillColor" class="span4">
+							<option value="None">None</option>
+							<option value="White">White</option>
+							<option value="Silver">Silver</option>
+							<option value="Gray">Gray</option>
+							<option value="Black">Black</option>
+							<option value="Red">Red</option>
+							<option value="Maroon">Maroon</option>
+							<option value="Yellow">Yellow</option>
+							<option value="Olive">Olive</option>
+							<option value="Lime">Lime</option>
+							<option value="Green">Green</option>
+							<option value="Aqua">Aqua</option>
+							<option value="Teal">Teal</option>
+							<option value="Blue">Blue</option>
+							<option value="Navy">Navy</option>
+							<option value="Fuchsia">Fuchsia</option>
+							<option value="Purple">Purple</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="controls">
+					<div class="input-prepend">
+						<span class="add-on">Point size</span>
+						<select id="pointSize" class="span4">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="controls">
+					<div class="input-prepend">
+						<span class="add-on">Stroke width</span>
+						<select id="strokeWidth" class="span4">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+						</select>
+					</div>
+				</div>
+						
+			</div>
+
+			<!-- Room settings modal footer -->
+			<div class="modal-footer">
+				<!-- Room settings feedback template -->
+				{{>loginFeedback}}
+
+				<input type="submit" id="cancelRoomSettings" class="btn btn-danger" value="Cancel" />
+				<input type="submit" id="saveRoomSettings" class="btn btn-success" value="Save" />
+			</div>
+		</form>
+	</div>
+
+</template>

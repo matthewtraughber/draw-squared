@@ -1,0 +1,27 @@
+<!-- Locked room template -->
+<template name="lockedRoom">
+	
+	<!-- Locked room modal -->
+	<div id="lockedRoomModal" class="modal hide fade" tabindex="-1" role="dialog">
+		<form action="action">
+			<!-- Locked room modal header -->
+			<div class="modal-header">
+				<h4>You can't do this!</h4>
+			</div>
+
+			<!-- Locked room modal body -->
+			<div class="modal-body">
+				<p>Ask the user via room chat to unlock the room.</p>	
+			</div>
+
+			<!-- Locked room modal footer -->
+			<div class="modal-footer">
+				<!-- Locked room feedback template -->
+				{{>loginFeedback}}
+
+				<input type="submit" id="closeLockedRoomModal" class="btn btn-success" value="Ok" />
+			</div>
+		</form>
+	</div>
+
+</template>

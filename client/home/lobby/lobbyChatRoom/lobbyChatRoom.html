@@ -1,0 +1,21 @@
+<!-- Lobby chat room template -->
+<template name="lobbyChatRoom">
+
+	<div id="lobbyChatRoom" class="row-fluid">
+		<!-- Lobby chatbox -->	
+		<div id="chatBox" class="span12">
+			{{>lobbyChatBoxMessage}}
+		</div>
+
+		<!-- Lobby chat input -->
+		<div id="lobbyChatInput" class="span12">
+			<span class="span10">
+				<input id="userMessage" type="text" class="pull-left input-block-level" />
+			</span>
+			<span class="span2">
+				<input id="sendUserMessage" class="btn pull-right input-block-level" type="submit" value="Send" />
+			</span>
+		</div>
+	</div>
+
+</template>

@@ -1,0 +1,30 @@
+<!-- head section (derp)-->
+<head>
+	<title>draw&sup2;</title>
+</head>
+
+<!-- body section -->
+<body>
+	<!-- Hidden modals -->
+	{{>login}}
+	{{>registration}}
+	{{>inviteConfirmation}}
+	{{>inviteAcceptance}}
+	{{>roomSettings}}
+	{{>lockedRoom}}
+	{{>unsupportedBrowser}}
+
+	<!-- Global navigation -->
+	{{>globalNav}}
+
+	<!-- Main content -->
+	<div id="mainContent">
+		{{#isolate}}
+			<!-- Renders the page per router instructions -->
+			{{renderPage}}
+		{{/isolate}}
+	</div>
+
+	<!-- Global footer -->
+	{{>footer}}
+</body>

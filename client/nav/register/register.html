@@ -1,0 +1,55 @@
+<!-- Registration template -->
+<template name="registration">
+	
+	<!-- Registration modal -->
+	<div id="registrationModal" class="modal hide fade" tabindex="-1" role="dialog">
+		<form action="action">
+			<!-- Registration modal header -->
+			<div class="modal-header">
+				<h4>What's your sign?</h4>
+			</div>
+
+			<!-- Registration modal body -->
+			<div class="modal-body">
+				
+				<div class="controls">
+					<div class="input-prepend">
+						<span class="add-on"><i class="icon-user"></i></span>
+						<input type="text" id="newAccountUserName" class="input-block-level" placeholder="Username" />
+					</div>
+				</div>
+
+				<div class="controls">
+					<div class="input-prepend">
+						<span class="add-on"><i class="icon-envelope"></i></span>
+						<input type="email" id="newAccountEmail" class="input-block-level" placeholder="Email address" />
+					</div>
+				</div>
+
+				<div class="controls">
+					<div class="input-prepend">
+						<span class="add-on"><i class="icon-lock"></i></span>
+						<input type="password" id="newAccountPassword" class="input-block-level" placeholder="Password" />
+					</div>
+				</div>
+
+				<div class="controls">
+					<div class="input-prepend">
+						<span class="add-on"><i class="icon-lock"></i></span>
+						<input type="password" id="newAccountPassword2" class="input-block-level" placeholder="Re-enter password" />
+					</div>
+				</div>
+				
+			</div> 
+
+			<!-- Registration modal footer -->
+			<div class="modal-footer">
+				<!-- Registration feedback template -->
+				{{>registrationFeedback}}
+
+				<input type="submit" id="createAccount" class="btn btn-success" value="Create Account" />
+			</div>
+		</form>
+	</div>
+	
+</template>

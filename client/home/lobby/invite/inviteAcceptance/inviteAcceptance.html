@@ -1,0 +1,28 @@
+<!-- Invite acceptance template -->
+<template name="inviteAcceptance">
+
+	<!-- Invite acceptance modal -->
+	<div id="inviteAcceptanceModal" class="modal hide fade" tabindex="-1" role="dialog">
+		<form action="action">
+			<!-- Invite acceptance modal header -->
+			<div class="modal-header">
+				<h4>Hey you!</h4>
+			</div>
+
+			<!-- Invite acceptance modal body -->
+			<div class="modal-body">
+				<p><strong>{{>inviter}}</strong> invited you to a private room.</p>
+			</div>
+
+			<!-- Invite acceptance modal footer -->
+			<div class="modal-footer">
+				<!-- Invite acceptance feedback template -->
+				{{>inviteFeedback}}
+
+				<input type="submit" id="refuseInvite" class="btn btn-danger" value="Refuse" />
+				<input type="submit" id="acceptInvite" class="btn btn-success" value="Accept" />
+			</div>
+		</form>
+	</div>
+
+</template>

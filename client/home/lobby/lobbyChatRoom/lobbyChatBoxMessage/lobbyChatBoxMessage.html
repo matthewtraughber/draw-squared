@@ -1,0 +1,8 @@
+<!-- Lobby chat box message template -->
+<template name="lobbyChatBoxMessage">	
+	
+	{{#each lobbyMessage}}
+		<pre>[<em>{{timePosted}}</em>]&nbsp;<strong>{{userName}}:&nbsp;</strong>{{messageContents}}</pre>
+	{{/each}}
+
+</template>
